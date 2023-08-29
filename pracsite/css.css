@@ -11,7 +11,7 @@ body {
 .container-top{
 display: flex;
 justify-content: space-around;
-background-color: aqua;
+background: -webkit-linear-gradient(#139dff, #09e8e8ce);
 }
 .mid-top{
 padding-top: 20px;
@@ -41,81 +41,9 @@ border-radius: 2rem;
 
 
 
-@media screen and (max-width:955px) {
-
-#dropdown{
-  position: absolute;
- left: 6px;
-}
-
-.mid-top{
-display: none;
-}
-.icon-top{
-display: none;
-}
-
-#waste2{
-  text-align: center;
-}
-
-.abc{
-display: flex;
-flex-wrap: wrap-reverse;
-}
-
-
-#img-cont1{
-display: flex;
-margin-bottom: -15%;
-justify-content: center;
-}
-
-
-.ulli{
-  margin-bottom: 5%;
-justify-content: center;
-}
-
-.mid-lorem{
-  display: inline-block;
-  max-width: 50%;
-  text-align: center;
-}
-
-.mid-icon1{
-  flex-wrap: wrap;
-}
-.mid-icon1 div{
-margin-top: 3%;
-}
-
-.flavor{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cont{
- min-width: 250px;
-}
-
-.waster{
-  text-align: center;
-}
-
-#button-cont{
-  text-align: center;
-}
-.chain{
-  color: black;
-}
-
-
-
-}
 #img{
 width: 50vw;
-
+margin-top: 10px;
 border-radius: 50%;
 }
 
@@ -213,13 +141,18 @@ width: 50%;
 .img-cont{
   display: flex;
   justify-content: space-evenly;  
+
  
 }
 
 .mid-icon1{
+  margin-left: 10%;
+  gap: 70px;
+  margin-right: 10%;
   margin-top: 3%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+
   text-align: center;
 }
 
@@ -231,24 +164,24 @@ text-align: center;
 background: -webkit-linear-gradient(#139dff, #09e8e8ce);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-margin-bottom: -0.7%;
+
 background-clip: text;
 font-size: 15vw;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-margin-bottom: -4.5%;
+margin-bottom: -7%;
 }
 
 
 .flavor{
-  border: 2px solid red;
   border-radius: 5%;
   margin-left: 22vw;
   margin-right: 22vw;
 display: flex;
  justify-content: center;
- background-image: linear-gradient(#139dff,#09e8e8ce);
-  gap: 50px;
+ background-color: #139dff;
+ margin-top: 40px;
+  gap: 20px;
 }
 
 .cont{
@@ -303,9 +236,7 @@ padding-top: 30px;
   height: 40px;
   margin-bottom: -80px;
  background-color: white;
- background: -webkit-linear-gradient(#139dff, #09e8e8ce);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+ color: rgb(0, 191, 255);
  
 }
 .bottom-heading{
@@ -346,3 +277,107 @@ padding-top: 30px;
   color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#mover{
+  text-align: center;
+}
+#crypto-blue{
+  background: -webkit-linear-gradient(#139dff, #09e8e8ce);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.drop-list{
+  display: none;
+}
+
+.d{
+  color: whitesmoke;
+background-color: #09e8e8ce;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width:955px) {
+
+  #dropdown{
+    position: absolute;
+   left: 6px;
+  }
+  
+  .mid-top{
+  display: none;
+  }
+  .icon-top{
+  display: none;
+  }
+  
+  #waste2{
+    text-align: center;
+  }
+  
+  .abc{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  }
+  
+  
+  #img-cont1{
+  display: flex;
+  margin-bottom: -15%;
+  justify-content: center;
+  }
+  
+  
+  .ulli{
+    margin-bottom: 5%;
+  justify-content: center;
+  }
+  
+  .mid-lorem{
+    display: inline-block;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .mid-icon1{
+    flex-wrap: wrap;
+  }
+  .mid-icon1 div{
+  margin-top: 3%;
+  }
+  
+  .flavor{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+ 
+  }
+  
+  .cont{
+  
+   min-width: 250px;
+  }
+  
+  .waster{
+    text-align: center;
+  }
+  
+  #button-cont{
+    text-align: center;
+  }
+  .chain{
+    color: black;
+    margin-bottom: -35px;
+  }
+ .mid-everything{
+  display: none;
+ }
+  
+  }
+
+  .bot-flavor:hover {
+    background-image: linear-gradient(#0880d6,#09e8e8ce);
+    color: white;
+}
+
