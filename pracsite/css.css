@@ -84,9 +84,16 @@ img {
 }
 
 #bigText span {
-  background: -webkit-linear-gradient(#139dff, #09e8e8ce);
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 6.25rem;
+  font-weight: 900;
+  line-height: 6.25rem;
 }
 
 .wasted h1 {
@@ -97,36 +104,61 @@ img {
   margin-top: 19px;
 }
 
-#button-cont {
-  margin-left: 3%;
-  margin-bottom: -2%;
-}
-
 #b2 {
   border-radius: 60px;
   background: linear-gradient(175deg, #007bbc 0%, #60cdce 100%);
   border-radius: 40vh;
   width: 180px;
-  padding: 15px;
+  padding: 10px 15px;
   cursor: pointer;
-
+  border: none;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.arrow-bg {
+  border-radius: 60px;
+  opacity: 0.2;
+  background: #fff;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.arrow-container {
+  position: relative;
+}
+
+.arrow-container svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 #button-text {
   text-align: center;
-  margin-left: 20px;
+  font-size: 1.125;
 }
 
 .ullis {
   display: flex;
   gap: 20px;
   text-align: center;
+  align-items: center;
 }
 
-.ullis img {
-  width: 5vw;
-  height: 4vh;
+#waste3 {
+  color: #323232;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .abc {
@@ -403,7 +435,7 @@ table td {
   }
 
   #waste2 {
-    text-align: center;
+    text-align: start;
   }
 
   .abc {
@@ -456,7 +488,7 @@ table td {
   }
 
   .waster {
-    text-align: center;
+    text-align: start;
   }
 
   #button-cont {
@@ -476,5 +508,11 @@ table td {
 
   .gh {
     margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #bigText {
+    font-size: 3.75rem;
   }
 }
