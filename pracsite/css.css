@@ -420,36 +420,65 @@ text-align: start;
 #bottom{
   border: 2px solid blue;
   border-radius: 10px;
-  padding: 50px;
-  background-color: #007bbc;
-  gap: 200px;
+ padding: 20px;
+ background-image: linear-gradient(#0880d6, #09e8e8ce);
+  gap: 30px;
   margin-top: 50px;
 display: flex;
 justify-content: center;
-margin-left: 300px;
-margin-right: 300px;
+color: white;
+
+flex-wrap: wrap;
+margin-left: 15vw;
+margin-right: 15vw;
+}
+
+#email::placeholder {
+  opacity: 0.5; 
+}
+#subscribe{
+
 }
 
 #email{
-  border: 2px solid red;
+  border: 2px solid rgb(0, 187, 255);
   border-radius: 20px;
   text-align: center;
-  width: 200px;
+width: 200px;
+height: 4vh;
   text-align: left;
-  padding-left: 30px;
-  opacity: ;
+  margin-top: 10px;
+
+
+}
+
+.ghee{
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.mid-top2{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+ 
 }
 
 
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 1500px) {
-  #sideText {
-    display: none;
-  }
-  #sideText2 {
-    display: none;
-  }
+#bottom{
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  width: 100%;
 }
+
+}
+
+
 
 @media screen and (max-width: 955px) {
 
@@ -457,6 +486,27 @@ margin-right: 300px;
  width: 100vw;
   justify-content: center;
 }
+
+.mid-top2{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+
+  
+}
+
+.icon-top2{
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-right: 20px;
+margin-top: 30px;
+}
+
 
 #logodiv{
 
