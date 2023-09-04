@@ -1,5 +1,5 @@
 let dropList = document.querySelectorAll(".drop-list");
-document.querySelector("#dropdown").addEventListener("click", function () {
+document.querySelector(".burger-menu").addEventListener("click", function () {
   dropList.forEach(function (item) {
     item.classList.toggle("d");
   });
@@ -12,7 +12,7 @@ let icon4 = document.querySelector("#ic4");
 let a = 0;
 let b = 0;
 
-window.addEventListener("resize", checker);
+// window.addEventListener("resize", checker);
 
 a = 0;
 function checker() {
