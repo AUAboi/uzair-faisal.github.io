@@ -1,5 +1,5 @@
 let dropList = document.querySelectorAll(".drop-list");
-document.querySelector("#dropdown").addEventListener("click", function () {
+document.querySelector(".burger-menu").addEventListener("click", function () {
   dropList.forEach(function (item) {
     item.classList.toggle("d");
   });
