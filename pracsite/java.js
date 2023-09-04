@@ -12,7 +12,7 @@ let icon4 = document.querySelector("#ic4");
 let a = 0;
 let b = 0;
 
-window.addEventListener("resize", checker);
+// window.addEventListener("resize", checker);
 
 a = 0;
 function checker() {

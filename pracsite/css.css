@@ -13,6 +13,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .container-top {
   display: flex;
   justify-content: space-between;
@@ -232,14 +236,138 @@ img {
   opacity: 1;
 }
 .mid-icon1 {
-  margin-left: 10%;
   gap: 70px;
-  margin-right: 10%;
-  margin-top: 3%;
   display: flex;
   justify-content: space-evenly;
 
   text-align: center;
+}
+
+.cards-showcase-heading {
+  font-size: 16rem;
+  font-weight: 900;
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: -8rem;
+}
+
+.cards-showcase-outer {
+  border-radius: 72px;
+  background: var(
+    --Linear,
+    linear-gradient(
+      100deg,
+      rgba(0, 122, 188, 0.1) 9.21%,
+      rgba(96, 204, 206, 0.1) 97.35%
+    )
+  );
+  padding: 1.4rem;
+}
+
+.cards-showcase-inner {
+  border-radius: 50px;
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2.6rem;
+}
+
+.showcase-card-title {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.showcase-card-container {
+  width: 40%;
+}
+
+.showcase-card {
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 4px 34px 0px rgba(96, 205, 206, 0.2);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.showcase-features {
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+}
+
+.showcase-feature {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.showcase-download {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.showcase-download-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 60px;
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
+  color: white;
+  cursor: pointer;
+}
+
+.showcase-download-button img {
+  background-color: #ffffff20;
+  border-radius: 60px;
+}
+
+.showcase-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.6rem;
+}
+
+.showcase-link-button {
+  border-radius: 60px;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--Linear, #007bbc);
+  background-color: transparent;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.showcase-link-button span {
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .flavorText {
@@ -619,9 +747,6 @@ table td {
 
   .mid-icon1 {
     flex-wrap: wrap;
-  }
-  .mid-icon1 div {
-    margin-top: 3%;
   }
 
   .flavor {
