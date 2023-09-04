@@ -292,6 +292,31 @@ ul {
 
 .showcase-card-container {
   width: 40%;
+  position: relative;
+}
+
+.showcase-card-decoration {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  left: -230px;
+  font-size: 4rem;
+  color: white;
+  transform: rotate(-90deg);
+  opacity: 0.2;
+}
+
+.showcase-card-decoration.right-side {
+  right: -230px;
+  left: unset;
+  transform: rotate(90deg);
 }
 
 .showcase-card {
@@ -353,11 +378,18 @@ ul {
   border-radius: 60px;
   padding: 0.6rem 1rem;
   border: 1px solid var(--Linear, #007bbc);
-  background-color: transparent;
+  background: transparent;
   display: flex;
   gap: 0.4rem;
   align-items: center;
   flex-shrink: 0;
+}
+
+.showcase-link-button:hover {
+  background: var(
+    --Linear,
+    linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
+  );
 }
 
 .showcase-link-button span {
@@ -368,6 +400,17 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.showcase-link-button:hover span {
+  color: white;
+  background: unset;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+.showcase-link-button:hover svg path {
 }
 
 .flavorText {
@@ -656,10 +699,22 @@ table td {
     margin-top: 30px;
   }
 
-  #logodiv {
+  .cards-showcase-inner {
+    flex-direction: column;
   }
 
-  #logos {
+  .showcase-card-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .cards-showcase-heading {
+    font-size: 8rem;
+    margin-bottom: -4rem;
+  }
+
+  .showcase-download {
+    margin-top: 2.6rem;
   }
 
   #bigText {
@@ -797,5 +852,32 @@ table td {
 @media screen and (max-width: 740px) {
   #bigText {
     font-size: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .showcase-card-container {
+    width: 100%;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 4px 34px 0px rgba(96, 205, 206, 0.2);
+  }
+  .cards-showcase-inner {
+    background: transparent;
+    padding: 0.6rem;
+  }
+  .cards-showcase-heading {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .showcase-card-decoration {
+    display: none;
+  }
+
+  .showcase-card-title {
+    color: #323232;
+    padding-bottom: 0;
   }
 }
