@@ -65,25 +65,23 @@ img {
   background: var(--linear, linear-gradient(133deg, #007bbc 0%, #60cdce 100%));
 }
 
-#img-cont1 {
-  text-align: start;
-}
-
 #img-cont1 img {
+  margin-left: -20px;
   position: relative;
   z-index: -1;
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1) scale(1.4);
+  transform: scaleX(1) scale(1.3);
 }
 
 #bigText {
-  font-size: 6rem;
+  font-size: 4rem;
   background: -webkit-linear-gradient(#139dff, #09e8e8ce);
   -webkit-background-clip: text;
   webkit-text-fill-color: transparent;
 }
 
 #bigText span {
+  display: block;
   background: var(
     --Linear,
     linear-gradient(100deg, #007bbc 9.21%, #60cdce 97.35%)
@@ -91,9 +89,17 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 6.25rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 6.25rem;
+}
+
+#mid-heading {
+  text-align: center;
+}
+
+.mid-lorem {
+  font-size: 3rem;
 }
 
 .wasted h1 {
@@ -170,6 +176,7 @@ img {
 .mid-headings {
   text-align: center;
 }
+
 #content {
   background: -webkit-linear-gradient(#139dff, #09e8e8ce);
   -webkit-background-clip: text;
@@ -177,7 +184,7 @@ img {
 }
 
 #lorem-heading {
-  font-size: 150%;
+  font-size: 60px;
 }
 
 .icon1 {
@@ -372,6 +379,12 @@ img {
   text-align: center;
 }
 
+#lorem-cont {
+  text-align: center; /* Center text horizontally */
+  max-width: 420px; /* Set a maximum width for the element */
+  margin: 0 auto;
+}
+
 #sideText {
   color: rgba(255, 255, 255, 0.532);
   writing-mode: vertical-lr;
@@ -401,15 +414,15 @@ img {
 
 #tabletop {
   text-align: right;
-  padding-right: 7%;
+  padding-right: 30px;
+}
+.th {
+  padding-top: 30px;
 }
 
-table tr th {
-  border: 2px solid;
-}
 table td {
   text-align: center;
-  border: 2px solid;
+
   width: 200px;
   margin-bottom: 3%;
 }
@@ -419,15 +432,67 @@ table td {
 }
 
 .t-q {
-  width: 700px;
+  max-width: 600px;
+  padding-right: 20px;
+  padding-top: 20px;
+  margin-right: 500px;
+  text-align: start;
 }
 
-@media screen and (max-width: 1500px) {
-  #sideText {
-    display: none;
-  }
-  #sideText2 {
-    display: none;
+.th {
+  margin-left: 40px;
+}
+
+#bottom {
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  background-image: linear-gradient(#0880d6, #09e8e8ce);
+  gap: 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  flex-wrap: wrap;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#email::placeholder {
+  opacity: 0.5;
+}
+#subscribe {
+}
+
+#email {
+  border: 2px solid rgb(0, 187, 255);
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+  height: 4vh;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.ghee {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mid-top2 {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #bottom {
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
   }
 }
 
@@ -440,6 +505,45 @@ table td {
     right: 20px;
     top: 30px;
   }
+  #top-left {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .mid-top2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .icon-top2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  #logodiv {
+  }
+
+  #logos {
+  }
+
+  #bigText {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #bigText span {
+    text-align: center;
+    font-size: 4rem;
+  }
+
   .bot-flavor {
     width: 60%;
   }
@@ -456,6 +560,16 @@ table td {
 
   #sideText {
     display: none;
+  }
+
+  #lorem-heading {
+    font-size: 6px;
+    text-align: left;
+  }
+
+  #dropdown {
+    position: absolute;
+    left: 6px;
   }
 
   .mid-top {
@@ -478,6 +592,7 @@ table td {
     display: flex;
     margin-bottom: -15%;
     justify-content: center;
+    width: 250px;
   }
 
   .ullis {
@@ -492,6 +607,14 @@ table td {
     display: inline-block;
     max-width: 50%;
     text-align: center;
+  }
+
+  .mid-headings {
+    text-align: center;
+  }
+
+  .mid-lorem {
+    min-width: 270px;
   }
 
   .mid-icon1 {
@@ -539,6 +662,10 @@ table td {
 
   .gh {
     margin-right: 40px;
+  }
+
+  .t-q {
+    padding: 20px;
   }
 }
 
